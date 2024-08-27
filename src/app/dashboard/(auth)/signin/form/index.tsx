@@ -12,7 +12,7 @@ const PendingButton = () => {
   const { pending } = useFormStatus();
   return (
     <Button aria-disabled={pending} className="w-full" type="submit">
-      {pending ? "Submitting..." : "Submit"}
+      {pending ? "Loading..." : "Login"}
     </Button>
   );
 };
